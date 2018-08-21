@@ -10,7 +10,6 @@ import java.util.stream.Collectors;
 public class OrdenaPessoasPorNomeCrescente {
 
     public List<Pessoa> execute(List<Pessoa> pessoas) {
-        pessoas.sort(Comparator.comparing(Pessoa::getNome));
         return pessoas;
     }
 

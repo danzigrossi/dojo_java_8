@@ -11,8 +11,7 @@ public class AchaPessoasPorRua {
 
     public List<Pessoa> execute(List<Pessoa> pessoas, String nomeRua) {
         List<Pessoa> result = null;
-        Predicate<Pessoa> comparaNomeRua = p-> p.getEnderecoRua().equals(nomeRua);
-        result = pessoas.stream().filter( comparaNomeRua).collect(Collectors.toList());
+
         return result;
     }
 }

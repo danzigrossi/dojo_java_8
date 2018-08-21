@@ -9,15 +9,7 @@ import java.util.stream.Collectors;
 @Service
 public class AchaPessoasPorRuaComContaNegativaOrdenadaPorNomeCrescente {
     public List<Pessoa> execute(List<Pessoa> pessoas, String nomeRua) {
-        List<Pessoa> result = pessoas
-                .stream()
-                .filter( p -> p.getEnderecoRua().equals(nomeRua)
-                ).filter(p -> p.getContas()
-                        .stream()
-                        .anyMatch( c -> c.getSaldo() < 0)
-                )
-                .collect(Collectors.toList());
-        result.sort(Comparator.comparing(Pessoa::getNome));
+        List<Pessoa> result = null;
         return result;
     }
 }

@@ -11,10 +11,7 @@ import java.util.stream.Collectors;
 public class AchaContasComSaldoPositivo {
 
     public List<Conta> execute(List<Conta> contas) {
-        List<Conta> result = contas
-                .stream()
-                .filter( c -> c.getSaldo() > 0 )
-                .collect(Collectors.toList());
+        List<Conta> result = null;
 
         return result;
     }

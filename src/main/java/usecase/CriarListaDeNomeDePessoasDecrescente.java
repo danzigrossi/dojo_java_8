@@ -11,8 +11,7 @@ import java.util.stream.Collectors;
 @Service
 public class CriarListaDeNomeDePessoasDecrescente {
     public List<String> execute(List<Pessoa> pessoas) {
-        List<String> result = pessoas.stream().map(Pessoa::getNome).collect(Collectors.toList());
-        result.sort(Comparator.reverseOrder());
+        List<String> result = null;
         return result;
     }
 }
